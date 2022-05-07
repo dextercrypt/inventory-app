@@ -16,7 +16,7 @@ services:
    node_app:
      build: .
      ports:
-      - 5010:5000
+      - 5010:6000
       - 5000:3000
      environment:
             DB_URI: mongodb://mongo_db:27017
