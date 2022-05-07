@@ -22,6 +22,8 @@ RUN ls | grep package
 
 RUN npm install
 
+RUN npx browserslist@latest --update-db && npx browserslist@latest
+
 WORKDIR /usr/src/app
 
 CMD ["npm", "run", "dev"]
