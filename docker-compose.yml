@@ -22,7 +22,10 @@ services:
             DB_URI: mongodb://mongo_db:27017
      networks:
       - app-network
-      
+     depends_on:
+      - mongo_db
+     
+     
 networks:
     app-network:
         driver: bridge
