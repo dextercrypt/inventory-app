@@ -20,7 +20,7 @@ services:
       - 5000:3000
      volumes:
       - type: bind
-        source: ./inventory-app
+        source: ./
         target: /usr/src/app
      environment:
             DB_URI: mongodb://mongo_db:27017
