@@ -18,6 +18,9 @@ services:
      ports:
       - 5010:6000
       - 5000:3000
+     volumes:
+      - /usr/src/app
+      - /home/ubuntu/inventory-app:/usr/src/app
      environment:
             DB_URI: mongodb://mongo_db:27017
      networks:
