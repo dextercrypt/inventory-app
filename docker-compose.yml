@@ -32,7 +32,7 @@ services:
      
 networks:
     app-network:
-        driver: bridge
+        driver: bridg
 
 volumes:
   mongodb:
