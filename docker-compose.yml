@@ -19,9 +19,7 @@ services:
       - 5010:6000
       - 5000:3000
      volumes:
-      - type: bind
-        source: ./
-        target: /usr/src/app
+      - .:/usr/src/app
      environment:
             DB_URI: mongodb://mongo_db:27017
      networks:
