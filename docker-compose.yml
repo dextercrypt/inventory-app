@@ -19,8 +19,9 @@ services:
       - 5010:6000
       - 5000:3000
      volumes:
-      - /usr/src/app
-      - /home/ubuntu/inventory-app:/usr/src/app
+      - type: bind
+        source: /home/ubuntu/inventory-app
+        target: /usr/src/app
      environment:
             DB_URI: mongodb://mongo_db:27017
      networks:
