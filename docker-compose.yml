@@ -18,6 +18,10 @@ services:
      ports:
       - 5010:6000
       - 5000:3000
+     volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+      - /usr/src/app/views/node_modules
      environment:
             DB_URI: mongodb://mongo_db:27017
      networks:
