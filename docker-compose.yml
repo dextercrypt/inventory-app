@@ -9,6 +9,8 @@ services:
              - 2717:27017
      volumes:
        - mongodb:/data/db
+     networks:
+       - app-network
 
     #Node js app
    node_app:
@@ -18,6 +20,12 @@ services:
       - 5000:3000
      environment:
             DB_URI: mongodb://mongo_db:27017
+     networks:
+      - app-network
+      
+networks:
+    app-network:
+        driver: bridge
 
 volumes:
   mongodb:
