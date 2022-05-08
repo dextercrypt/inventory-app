@@ -19,7 +19,7 @@ node(label : 'nodejs_server') {
         sh''' 
              cd /home/ubuntu/inventory-app 
              sudo docker compose up -d 
-             sudo docker ps | grep inventory
+             sudo docker ps | grep node
              sudo docker ps | grep mongo
           '''
     }
