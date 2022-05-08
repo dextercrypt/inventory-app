@@ -35,4 +35,4 @@ node(label : 'nodejs_server') {
           echo "DONE"
         }
     }
-}
+
