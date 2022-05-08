@@ -1,4 +1,7 @@
 node(label : 'nodejs_server') {
+    stage('Update Code') {
+       checkout scm
+    }
     stage('Building Context') {
         sh'''
              cd /home/ubuntu/inventory-app
