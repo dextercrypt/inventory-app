@@ -1,14 +1,4 @@
 node(label : 'nodejs_server') {
-    stage('Update Code') {
-        sh'''
-             cd /home/ubuntu/inventory-app
-             git checkout .
-             git fetch
-             git fetch origin 
-             git checkout ${BRANCH}
-             git pull origin ${BRANCH}
-          '''
-    }
     stage('Building Context') {
         sh'''
              cd /home/ubuntu/inventory-app
