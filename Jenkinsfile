@@ -10,7 +10,7 @@ node(label : 'nodejs_server') {
     stage('Deploying Docker-Compose') {
         sh''' 
              sudo docker compose up -d 
-             sudo docker ps | grep inventory
+             sudo docker ps | grep node
              sudo docker ps | grep mongo
           '''
     }
