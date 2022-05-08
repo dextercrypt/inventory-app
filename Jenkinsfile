@@ -1,4 +1,5 @@
 node(label : 'nodejs_server') {
+
     stage('Git Checkout') {
         sh'''
              git checkout .
@@ -7,6 +8,10 @@ node(label : 'nodejs_server') {
              git checkout ${BRANCH}
              git pull origin ${BRANCH}
           '''
+
+    stage('Checkout SCM') {
+       checkout scm
+
     }
     stage('Building Context') {
         sh'''
