@@ -10,7 +10,7 @@
 > Shopping App, it started for The Odin Project practice
 > Started from here [curriculum](https://www.theodinproject.com/courses/nodejs/lessons/inventory-application)
 
-> The Code can be found [here](https://github.com/dextercrypt/inventory-application)
+> The Code can be found [here](https://github.com/dextercrypt/inventory-app)
 
 > The Code can be found (Original Author) [here](https://github.com/moelashmawy/inventory-application)
 
