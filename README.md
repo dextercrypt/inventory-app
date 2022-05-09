@@ -78,6 +78,14 @@
 
 > Project is created with:
 
+## Automation
+- Jenkins
+- Git
+
+#### Microservice/Containerization
+- Docker 
+- Docker Compose
+
 #### Backend
 
 - Express
@@ -114,7 +122,29 @@
 
 ## 💻 &nbsp; Setup
 
-To run this project, install it locally using npm:
+
+To automate using Jenkins, use Jenkinsfile in your Jenkins Pipeline Configuration.
+
+```
+$ Jenkins > Your_Pipeline > Configure > Use pipeline script from SCM
+$ Add your Git repo in Repository option, use Filename as "Jenkinsfile", select Branch and disable "Lightweight Checkout" Option. and Then run the pipeline.
+$ Other option is that you can copy the Jenkinsfile code and paste it into your Jenkins Pipeline Configuration.
+$ In Jenkins Pipeline Configuration after copying the code, make any necessary edits according to path or steps as you like.  
+```
+
+Dockerfile is designed to run the app in Dev mode means both FrontEnd and BackEnd by default, you can edit the start behaviour by changing the command in Dockerfile.
+To run this project using Docker, It will run both Frontend/Client and the Backend/Server, it can be done using - 
+
+```
+$ cd inventory-application
+$ sudo docker compose build --no-cache
+$ sudo docker compose up -d 
+$ To stop the containers - "sudo docker compose stop"
+$ To remove all containers of this app - "sudo docker compose down"
+```
+
+
+To run this project locally, install it locally using npm:
 
 ```
 $ cd inventory-application
@@ -126,6 +156,12 @@ $ npm run server (for Node server side development)
 $ npm run client (for React client side development)
 $ npm run dev (for both client and server side)
 ```
+
+Install Node.js for local installation using this blog -
+```
+$ https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-18-04
+```
+
 ## &nbsp; ENV
 - PORT=
 - DB_URI=
