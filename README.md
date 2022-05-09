@@ -9,7 +9,8 @@
 
 > Shopping App, it started for The Odin Project practice
 > Started from here [curriculum](https://www.theodinproject.com/courses/nodejs/lessons/inventory-application)
-> The Code can be found [here](https://github.com/hamohuh/inventory-application)
+> The Code can be found [here](https://github.com/dextercrypt/inventory-application)
+> The Code can be found [here-original](https://github.com/dextercrypt/inventory-application)
 
 ### <h2 align="center"> ⚡️⚡️⚡️ &nbsp; [Live Demo](https://afternoon-atoll-93127.herokuapp.com/) ⚡️⚡️⚡️ </h2>
 
@@ -131,8 +132,16 @@ $ npm run dev (for both client and server side)
 - CLOUDINARY_API_KEY=
 - CLOUDINARY_API_ESCRET=
 
+# Containerized by - 
 
-# Author
+👤 &nbsp; **Mayank Purohit**
+
+- Github: [@dextercrypt](https://github.com/dextercrypt)
+- Linkedin: [@Mayank Purohit ](https://www.linkedin.com/in/mayank-purohit-174583208/)
+
+
+
+# Main Author and Major Thanks to -
 
 👤 &nbsp; **Mohamed Elashmawy**
 
