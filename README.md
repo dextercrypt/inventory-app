@@ -12,7 +12,7 @@
 
 > The Code can be found [here](https://github.com/dextercrypt/inventory-application)
 
-> The Code can be found [here-original](https://github.com/dextercrypt/inventory-application)
+> The Code can be found (Original Author) [here](https://github.com/dextercrypt/inventory-application)
 
 ### <h2 align="center"> ⚡️⚡️⚡️ &nbsp; [Live Demo](https://afternoon-atoll-93127.herokuapp.com/) ⚡️⚡️⚡️ </h2>
 
