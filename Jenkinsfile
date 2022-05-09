@@ -1,14 +1,28 @@
 node(label : 'nodejs_server') {
+
+    stage('Git Checkout') {
+        sh'''
+             cd /home/ubuntu/inventory-app      
+             git checkout .
+             git fetch
+             git fetch origin 
+             git checkout ${BRANCH}
+             git pull origin ${BRANCH}
+          '''
+
     stage('Checkout SCM') {
        checkout scm
+
     }
     stage('Building Context') {
         sh'''
+             cd /home/ubuntu/inventory-app 
              sudo docker compose build --no-cache
           '''
     }
     stage('Deploying Docker-Compose') {
         sh''' 
+             cd /home/ubuntu/inventory-app 
              sudo docker compose up -d 
              sudo docker ps | grep node
              sudo docker ps | grep mongo
