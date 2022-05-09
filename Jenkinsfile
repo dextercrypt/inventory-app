@@ -1,4 +1,5 @@
 node(label : 'nodejs_server') {
+
     stage('Git Checkout') {
         sh'''
              cd /home/ubuntu/inventory-app      
@@ -8,6 +9,10 @@ node(label : 'nodejs_server') {
              git checkout ${BRANCH}
              git pull origin ${BRANCH}
           '''
+
+    stage('Checkout SCM') {
+       checkout scm
+
     }
     stage('Building Context') {
         sh'''
