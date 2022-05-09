@@ -1,8 +1,11 @@
 <h1 align="center">  🛒 &nbsp; Shopping App 🛒 </h1>
 
+> Containerized and automated MERN Stack App. 
+
 > Built with MERN stack (MongoDB, Express, React and Node).
 
 > Containerized with Docker, automated Build/Deployed through Jenkins.
+> It can be run even locally using npm OR using Docker.
 
 > Shopping App, it started for The Odin Project practice
 > Started from here [curriculum](https://www.theodinproject.com/courses/nodejs/lessons/inventory-application)
