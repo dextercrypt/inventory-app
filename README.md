@@ -1,10 +1,18 @@
 <h1 align="center">  🛒 &nbsp; Shopping App 🛒 </h1>
 
+> Containerized and automated MERN Stack App. 
+
 > Built with MERN stack (MongoDB, Express, React and Node).
+
+> Containerized with Docker, automated Build/Deployed through Jenkins.
+> It can be run even locally using npm OR using Docker.
 
 > Shopping App, it started for The Odin Project practice
 > Started from here [curriculum](https://www.theodinproject.com/courses/nodejs/lessons/inventory-application)
-> The Code can be found [here](https://github.com/hamohuh/inventory-application)
+
+> The Code can be found [here](https://github.com/dextercrypt/inventory-app)
+
+> The Code can be found (Original Author) [here](https://github.com/moelashmawy/inventory-application)
 
 ### <h2 align="center"> ⚡️⚡️⚡️ &nbsp; [Live Demo](https://afternoon-atoll-93127.herokuapp.com/) ⚡️⚡️⚡️ </h2>
 
@@ -70,6 +78,14 @@
 
 > Project is created with:
 
+## Automation
+- Jenkins
+- Git
+
+#### Microservice/Containerization
+- Docker 
+- Docker Compose
+
 #### Backend
 
 - Express
@@ -106,7 +122,29 @@
 
 ## 💻 &nbsp; Setup
 
-To run this project, install it locally using npm:
+
+To automate using Jenkins, use Jenkinsfile in your Jenkins Pipeline Configuration.
+
+```
+$ Jenkins > Your_Pipeline > Configure > Use pipeline script from SCM
+$ Add your Git repo in Repository option, use Filename as "Jenkinsfile", select Branch and disable "Lightweight Checkout" Option. and Then run the pipeline.
+$ Other option is that you can copy the Jenkinsfile code and paste it into your Jenkins Pipeline Configuration.
+$ In Jenkins Pipeline Configuration after copying the code, make any necessary edits according to path or steps as you like.  
+```
+
+Dockerfile is designed to run the app in Dev mode means both FrontEnd and BackEnd by default, you can edit the start behaviour by changing the command in Dockerfile.
+To run this project using Docker, It will run both Frontend/Client and the Backend/Server, it can be done using - 
+
+```
+$ cd inventory-application
+$ sudo docker compose build --no-cache
+$ sudo docker compose up -d 
+$ To stop the containers - "sudo docker compose stop"
+$ To remove all containers of this app - "sudo docker compose down"
+```
+
+
+To run this project locally, install it locally using npm:
 
 ```
 $ cd inventory-application
@@ -118,6 +156,12 @@ $ npm run server (for Node server side development)
 $ npm run client (for React client side development)
 $ npm run dev (for both client and server side)
 ```
+
+Install Node.js for local installation using this blog -
+```
+$ https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-18-04
+```
+
 ## &nbsp; ENV
 - PORT=
 - DB_URI=
@@ -126,8 +170,16 @@ $ npm run dev (for both client and server side)
 - CLOUDINARY_API_KEY=
 - CLOUDINARY_API_ESCRET=
 
+# Containerized by - 
 
-# Author
+👤 &nbsp; **Mayank Purohit**
+
+- Github: [@dextercrypt](https://github.com/dextercrypt)
+- Linkedin: [@Mayank Purohit ](https://www.linkedin.com/in/mayank-purohit-174583208/)
+
+
+
+# Main Author and Major Thanks to -
 
 👤 &nbsp; **Mohamed Elashmawy**
 
